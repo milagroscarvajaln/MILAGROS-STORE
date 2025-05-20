@@ -315,7 +315,7 @@ header nav ul li:hover::after {
 
 /* ------------------ RESPONSIVO ------------------ */
 
-@media (max-width: 480px) {
+@media (max-width: 460px) {
     .logo {
         font-size: 2rem;
     }
@@ -370,5 +370,60 @@ header nav ul li:hover::after {
 
     .list {
         padding-top: 120px;
+    }
+}
+
+@media (max-height: 460px) and (orientation: landscape) {
+    .conteiner {
+        height: auto;
+        padding-top: 120px;
+    }
+
+    .item {
+        flex-direction: column;
+        padding: 10px;
+        position: relative;
+        height: auto;
+    }
+
+    .product-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-img img {
+        max-width: 80%;
+        max-height: 200px;
+    }
+
+    .content {
+        width: 100%;
+        padding: 0 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .product-name {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 0.95rem;
+    }
+
+    .arrows {
+        position: static;
+        margin-top: 20px;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .indicators {
+        position: static;
+        margin-top: 20px;
+    }
+
+    body {
+        overflow-y: auto;
     }
 }
